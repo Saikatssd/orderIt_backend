@@ -1,12 +1,12 @@
 
 const express = require("express");
 const app = require("./app");
-const connectDatabase = require("./config/database");
+const connectDatabase = require("./Database/database");
 const dotenv = require("dotenv");
 const cloudinary = require("cloudinary");
 // const { setDriver } = require("./config/config.env");
 
-dotenv.config({ path: "./config/config.env" });
+dotenv.config({ path: "config.env" });
 connectDatabase();
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,

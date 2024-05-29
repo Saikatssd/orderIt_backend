@@ -1,7 +1,7 @@
 
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const dotenv = require('dotenv');
-dotenv.config({ path: './config/config.env' });
+dotenv.config({ path: '/config.env' });
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 // console.log("stipeApiKey",process.env.STRIPE_API_KEY)
